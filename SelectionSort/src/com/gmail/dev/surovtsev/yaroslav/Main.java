@@ -10,8 +10,9 @@ public class Main {
         System.out.println(Arrays.toString(a));
     }
 
-    public static int[] selectionSort() {
-    
+    public static int[] selectionSort(int[] a) {
+        // TODO
+        return a;
     }
 
     public static int[] getRandomArray() {
