@@ -10,6 +10,10 @@ public class Main {
         System.out.println(Arrays.toString(a));
     }
 
+    public static int[] selectionSort() {
+    
+    }
+
     public static int[] getRandomArray() {
         Random rn = new Random();
         int n = rn.nextInt(20);
