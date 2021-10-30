@@ -17,6 +17,8 @@ public class Main {
             System.out.println(System.currentTimeMillis() - start + " ms");
             System.out.println("test merge commit2");
             System.out.println("test merge commit3");
+            System.out.println("test merge commit1");
+            System.out.println("test merge commit4");
         }
     }
 
