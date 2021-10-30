@@ -9,12 +9,23 @@ public class Main {
     public static Map<Integer, BigInteger> map = new HashMap<>();
 
     public static void main(String[] args) {
-        Integer n = 10;
-        BigInteger fact = factorial(n);
-        System.out.println("" + n + "! = " + fact);
+        for (int i = 0; i < 5; i++) {
+            Integer n = 5;
+            long start = System.currentTimeMillis();
+            BigInteger fact = factorial(n);
+            System.out.println("" + n + "! = " + fact.toString());
+            System.out.println(System.currentTimeMillis() - start + " ms");
+        }
     }
 
     public static BigInteger factorial(Integer number) {
-        return null;
+        BigInteger result = map.get(number);
+        if (result == null) {
+            result = BigInteger.ONE;
+            for (int i = 1; i <= number; i++) {
+                result = result.multiply(BigInteger.valueOf(i));
+            }
+        }
+        return result;
     }
 }
